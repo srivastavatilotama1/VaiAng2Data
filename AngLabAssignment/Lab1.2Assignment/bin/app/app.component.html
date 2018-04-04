@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+		Employee Id:<input [(ngModel)]='empId' /><br/>
+		Employee Name:<input [(ngModel)]='empName' /><br/>
+		Employee Salary:<input [(ngModel)]='empSalary' /><br/>
+		Employee Department:<input [(ngModel)]='empDept' /><br/>
+		<input type="button"  (click)="displayEmpInfo()"
+		value="Add Employee"/><br/>
+		<hr color="green" size="3"/>
+<div>
+		Employee Id is :{{empId}}<br/>
+		 Name is: {{empName}} <br/>
+ 		 Salary is {{empSalary}}<br/>
+ 		 Dept is {{empDept}}
+</div>
+</body>
+</html>

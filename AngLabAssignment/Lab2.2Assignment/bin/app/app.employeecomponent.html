@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<table border="1">
+		<tr>
+			<th (click)='onIDClick()'>ID</th>
+			<th  (click)='onNameClick()'>NAME</th>
+			<th  (click)='onSalaryClick()'>SALARY</th>
+			<th  (click)='onDeptClick()'>Department</th>
+			<th  (click)='onDojClick()'>Date Of Joining</th>
+		</tr>
+		<tr>
+		<tr *ngFor="let emp of employees">
+			<td>{{emp.empId}}</td>
+			<td>{{emp.empName}}</td>
+			<td>{{emp.empSal}}</td>
+			<td>{{emp.empDep}}</td>
+			<td>{{emp.empjoiningdate}}</td>
+		</tr>
+
+
+
+
+
+	</table>
+
+
+</body>
+</html>

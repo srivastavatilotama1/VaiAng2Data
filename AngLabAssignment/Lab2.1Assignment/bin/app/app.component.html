@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	Employee Id:
+	<input [(ngModel)]='emp.empId' #empIdText />
+	<br /> Employee Name:
+	<input [(ngModel)]='emp.empName'  #empNameText />
+	<br /> Employee Salary:
+	<input [(ngModel)]='emp.empSalary'  #empSalText />
+	<br /> Employee Department:
+	<input [(ngModel)]='emp.empDept'   #empDeptText/>
+	<br />
+	<input type="button"
+	 (click)="onAddEmp(empIdText,empNameText,empSalText,empDeptText)" 
+	value="Add Employee" />
+	<br /> 
+	<hr color="green" size="3" />
+	<b>Show All Employee</b><br/>
+	<div>
+	
+		<table border="1">
+			<tr>
+				<th>Employee ID</th>
+				<th>Employee age</th>
+				<th>Employee Gender</th>
+				<th>Employee Department</th>
+			</tr>
+			<tr>
+			<tr *ngFor="let emp of employees ; let i=index">
+				<td>{{emp.empId}}</td>
+				<td>{{emp.empName}}</td>
+				<td>{{emp.empSalary}}</td>
+				<td>{{emp.empDepartment}}</td>
+				<td><button (click)="onUpdateEmp(i)">Update</button></td>
+				<td><button (click)="onDeleteEmp(i)">Delete</button></td>
+			</tr>
+		</table>
+	</div>
+	<br /> 
+	<hr color="red" size="3" />
+	
+	<b>Update Employee</b><br/>
+	Employee Id:
+	<input [(ngModel)]='emp2.empId' #empIdText1 />
+	<br /> Employee Name:
+	<input [(ngModel)]='emp2.empName'  #empNameText1 />
+	<br /> Employee Salary:
+	<input [(ngModel)]='emp2.empSalary'  #empSalText1 />
+	<br /> Employee Department:
+	<input [(ngModel)]='emp2.empDepartment'   #empDeptText1/>
+	<br />
+	<input type="button"
+	 (click)="editEmp(empIdText1,empNameText1,empSalText1,empDeptText1)" 
+	value="Update Employee" />
+	<br /> 
+	<hr color="green" size="3" />
+	
+</body>
+</html>

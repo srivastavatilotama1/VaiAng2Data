@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<form #prodForm=ngForm (ngSubmit)="getData(prodForm)">
+		<table>
+			<tr>
+				<td>Product ID</td>
+				<td>
+				<input required id="prodId" name="prodName" [(ngModel)]="prod.pId"
+					type="text"  #idcontrol="ngModel" /> 
+					
+					<span
+					*ngIf="idcontrol.invalid && idcontrol.touched"> Product ID is
+						required</span>
+						</td>
+				
+			</tr>
+
+			<tr>
+				<td>Product Name</td>
+				<td><input  required  id="pnameid" name="pname"
+		[(ngModel)]="prod.pName" type="text"  #pnamecontrol="ngModel"  />	
+						
+				<span *ngIf="pnamecontrol.invalid && pnamecontrol.touched">
+					Product Name is Manadtory</span></td>
+				
+			</tr>
+			<tr>
+				<td>Product Cost</td>
+				<td><input required id="pcostId" name="pcost"
+					[(ngModel)]="prod.pCost" type="text" 
+					#pcostcontrol="ngModel" /></td>
+				<span *ngIf="pcostcontrol.invalid && pcostcontrol.touched">
+					Cost  is required</span>
+			</tr>
+			<tr>
+				<td>Product Online</td>
+				<td><input id="ponline" name="ponlineName" 
+				[(ngModel)]="prod.pOnline" 	type="radio" 
+				value="YES" />YES
+				<input id="ponline"
+					name="ponlineName" [(ngModel)]="prod.pOnline" type="radio"
+					value="NO" />NO</td>
+			</tr>
+			<tr>
+				<td>Product Catagory</td>
+				<td><select required id="pcat" name="pcatName"
+					[(ngModel)]="prod.pCatogory" #catcontrol="ngModel">
+						<option *ngFor="let cat of cats" 
+						[value]="cat.catId">{{cat.catName}}</option>
+				</select> <span *ngIf="catcontrol.invalid && catcontrol.touched">
+						Select any Category</span></td>
+			</tr>
+			<tr>
+				<td>Available In Stores</td>
+				<td><input id="prodStores" name="prodStoresBB"
+					[(ngModel)]="prod.pStores" type="checkbox" value="bigbazar" />
+					Big Bazar
+					<input	id="prodStores" name="prodStoresNameDM" 
+					[(ngModel)]="prod.pStores"type="checkbox" value="dmart" />DMart 
+					
+					<input id="prodStores" 	name="prodStoresNameRel" 
+					[(ngModel)]="prod.pStores" type="checkbox"
+					value="reliance" />Reliance
+					
+					 <input id="prodStores" name="prodStoresNameMS"
+					[(ngModel)]="prod.pStores" type="checkbox"
+					  value="megastore" />Mega Store</td>
+			</tr>
+			<tr>
+				<td><input type="submit" value="Add Product"
+					[disabled]="prodForm.invalid" /></td>
+			</tr>
+		</table>
+	</form>
+	Data putted in form{{prodForm.value |json}}
+</body>
+</html>

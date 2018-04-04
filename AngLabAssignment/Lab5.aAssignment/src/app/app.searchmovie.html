@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+Search Movie:
+<select  [(ngModel)]="model.moviesGenre" >
+	<option *ngFor="let gen of gens" 
+	     [value]="gen">{{gen}}
+	</option>
+</select><br/>
+<button (click)="searchData()">Search</button>	
+	<hr/>
+<table border="1">
+	<tr>
+		<th>Movie Name</th>
+		<th>Rating</th>
+	</tr>
+	<tr *ngFor="let mov of movs">
+		<td>{{mov.moviesName}}</td>
+		<td>{{mov.moviesRating}}</td>
+	</tr>
+	<tr *ngIf="!mov">
+		<td colspan="4">{{statusmessage}}</td>
+	</tr>
+	<tr *ngIf="mov && mov.length==0">
+			<td>No Movies  to display</td>>
+	</tr>
+</table>
+</body>
+</html>

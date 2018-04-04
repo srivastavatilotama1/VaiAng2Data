@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<h3>ADD Movie</h3>
+<form #movForm=ngForm (ngSubmit)="getData(movForm)">
+		<table>
+			<tr>
+				<td>MovID</td>
+				<td><input required id="mid" name="id" 
+				[(ngModel)]="model.moviesId" type="text" 
+				#idcontrol="ngModel" /> <span
+					*ngIf="idcontrol.invalid && idcontrol.touched">Mov  ID is	required</span>
+			   </td>
+		   </tr>
+	       <tr>
+		     <td>MovName</td>
+		     <td><input required  id="mname" name="movname" 	[(ngModel)]="model.moviesName" 
+					  type="text" #namecontrol="ngModel"
+					    pattern="[A-Z][a-z]+"/>				
+				<span *ngIf="namecontrol.invalid && namecontrol.touched">
+					Movie Name is required</span>
+					<span *ngIf="namecontrol.dirty&& namecontrol.touched">
+					Starts with cap Only Char required</span>		
+					
+		    </td>
+	       </tr>
+	       <tr>
+		        <td>Rating</td>
+			    <td><input [(ngModel)]='model.moviesRating'  id="rateId"
+			     name="rateName"  #rateControl="ngModel" 
+			     pattern="[1-5]{1}"/>
+			     <span *ngIf="rateControl.dirty && gencontrol.touched">
+						Rate Between 1 to 5</span></td>
+	       </tr>
+	        <tr>
+		        <td>Movie Genere</td>
+		        <td>
+		          <select  [(ngModel)]="model.moviesGenre"  id="genId" 
+		          name="genIdName" 
+		           #gencontrol="ngModel">
+	                  <option *ngFor="let gen of gens" 	[value]="gen">{{gen}}
+	                  </option>
+	              </select><span *ngIf="gencontrol.invalid && gencontrol.touched">
+						Select Genere!!!</span>
+			   </td>
+           </tr>
+           <tr>
+                  <td><button (click)="addData()">Add Movie Button</button>
+                     <input type="submit" value="Add Movie" 	[disabled]="movForm.invalid" />
+                  </td>
+           </tr>
+    </table>
+</form>
+<hr/>
+{{successmessage}}
+</body>
+</html>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jre1.8.0_31">
+		<attributes>
+			<attribute name="owner.project.facets" value="java"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jst.server.core.container/org.jboss.ide.eclipse.as.core.server.runtime.runtimeTarget/WildFly 8.x Runtime">
+		<attributes>
+			<attribute name="owner.project.facets" value="jst.web"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="lib" path="D:/Users/rvikash/Desktop/Module 1-5 data/jar/Spring MVC/jar/antlr-2.7.7.jar"/>
+	<classpathentry kind="lib" path="D:/Users/rvikash/Desktop/Module 1-5 data/jar/Spring MVC/jar/aopalliance-1.0.jar"/>
+	<classpathentry kind="lib" path="D:/Users/rvikash/Desktop/Module 1-5 data/jar/Spring MVC/jar/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="D:/Users/rvikash/Desktop/Module 1-5 data/jar/Spring MVC/jar/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="D:/Users/rvikash/Desktop/Module 1-5 data/jar/Spring MVC/jar/hibernate-commons-annotations-4.0.5.Final.jar"/>
+	<classpathentry kind="lib" path="D:/Users/rvikash/Desktop/Module 1-5 data/jar/Spring MVC/jar/hibernate-core-4.3.10.Final.jar"/>
+	<classpathentry kind="lib" path="D:/Users/rvikash/Desktop/Module 1-5 data/jar/Spring MVC/jar/hibernate-entitymanager-4.3.10.Final.jar"/>
+	<classpathentry kind="lib" path="D:/Users/rvikash/Desktop/Module 1-5 data/jar/Spring MVC/jar/hibernate-jpa-2.1-api-1.0.0.Final.jar"/>
+	<classpathentry kind="lib" path="D:/Users/rvikash/Desktop/Module 1-5 data/jar/Spring MVC/jar/jandex-1.1.0.Final.jar"/>
+	<classpathentry kind="lib" path="D:/Users/rvikash/Desktop/Module 1-5 data/jar/Spring MVC/jar/javassist-3.18.1-GA.jar"/>
+	<classpathentry kind="lib" path="D:/Users/rvikash/Desktop/Module 1-5 data/jar/Spring MVC/jar/jboss-logging-3.1.3.GA.jar"/>
+	<classpathentry kind="lib" path="D:/Users/rvikash/Desktop/Module 1-5 data/jar/Spring MVC/jar/jboss-logging-annotations-1.2.0.Beta1.jar"/>
+	<classpathentry kind="lib" path="D:/Users/rvikash/Desktop/Module 1-5 data/jar/Spring MVC/jar/jboss-transaction-api_1.2_spec-1.0.0.Final.jar"/>
+	<classpathentry kind="lib" path="D:/Users/rvikash/Desktop/Module 1-5 data/jar/Spring MVC/jar/ojdbc6.jar"/>
+	<classpathentry kind="lib" path="D:/Users/rvikash/Desktop/Module 1-5 data/jar/Spring MVC/jar/spring-aop-4.1.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/Users/rvikash/Desktop/Module 1-5 data/jar/Spring MVC/jar/spring-beans-4.1.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/Users/rvikash/Desktop/Module 1-5 data/jar/Spring MVC/jar/spring-context-4.1.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/Users/rvikash/Desktop/Module 1-5 data/jar/Spring MVC/jar/spring-core-4.1.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/Users/rvikash/Desktop/Module 1-5 data/jar/Spring MVC/jar/spring-expression-4.1.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/Users/rvikash/Desktop/Module 1-5 data/jar/Spring MVC/jar/spring-jdbc-4.1.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/Users/rvikash/Desktop/Module 1-5 data/jar/Spring MVC/jar/spring-orm-4.1.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/Users/rvikash/Desktop/Module 1-5 data/jar/Spring MVC/jar/spring-oxm-4.1.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/Users/rvikash/Desktop/Module 1-5 data/jar/Spring MVC/jar/spring-tx-4.1.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/Users/rvikash/Desktop/Module 1-5 data/jar/Spring MVC/jar/spring-web-4.1.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/Users/rvikash/Desktop/Module 1-5 data/jar/Spring MVC/jar/spring-webmvc-4.1.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/Users/rvikash/Desktop/Module 1-5 data/jar/Spring MVC/jar/validation-api-1.0.0.GA.jar"/>
+	<classpathentry kind="lib" path="D:/Users/rvikash/Desktop/Module 1-5 data/jar/Spring MVC/jar/xml-apis-1.0.b2.jar"/>
+	<classpathentry kind="lib" path="D:/Users/rvikash/Desktop/Module 1-5 data/jar/Spring MVC/jar/xpp3_min-1.1.4c.jar"/>
+	<classpathentry kind="lib" path="D:/Users/rvikash/Desktop/Module 1-5 data/jar/Spring MVC/jar/xstream-1.3.1.jar"/>
+	<classpathentry kind="output" path="build/classes"/>
+</classpath>
